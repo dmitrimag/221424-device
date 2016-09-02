@@ -2,32 +2,40 @@
 
 @font-face {
 	font-family: "Open Sans";
-	src: url(../fonts/OpenSans-Regular.ttf);
+	src: url(../fonts/OpenSans-Regular.woff2) format("woff2"),
+		 url(../fonts/OpenSans-Regular.woff) format("woff");
+	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
-	font-family: "Open Sans Light";
-	src: url(../fonts/OpenSans-Light.ttf);
+	font-family: "Open Sans";
+	src: url(../fonts/OpenSans-Light.woff2) format("woff2"),
+		 url(../fonts/OpenSans-Light.woff) format("woff");
+	font-style: normal;
 	font-weight: lighter;
 }
 
 @font-face {
-	font-family: "Gilroy Light";
-	src: url(../fonts/Gilroy-Light.ttf);
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-Light.woff2) format("woff2"),
+		 url(../fonts/Gilroy-Light.woff) format("woff");
+	font-style: normal;
 	font-weight: lighter;
 }
 
 @font-face {
-	font-family: "Gilroy ExtraBold";
-	src: url(../fonts/Gilroy-Extrabold.ttf);
-	font-weight: bolder;
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-ExtraBold.woff2) format("woff2"),
+		 url(../fonts/Gilroy-ExtraBold.woff) format("woff");
+	font-style: normal;
+	font-weight: bold;
 }
 
 /* ----- Basic styles ----- */
 
 body {
-	font: normal 15px/2em "Open Sans Light", Arial, sans-serif;
+	font: lighter 15px/2em "Open Sans", Arial, sans-serif;
 	color: #000;
 }
 
@@ -37,7 +45,7 @@ a {
 
 h1,
 .logo {
-	font: bold 48px/1em "Gilroy ExtraBold", Arial, sans-serif;
+	font: bold 48px/1em "Gilroy", Arial, sans-serif;
 	color: inherit;
 }
 
