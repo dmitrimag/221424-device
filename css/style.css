@@ -1,3 +1,29 @@
+/* ----- External fonts  ----- */
+
+@font-face {
+	font-family: "Open Sans";
+	src: url(../fonts/OpenSans-Regular.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Open Sans Light";
+	src: url(../fonts/OpenSans-Light.ttf);
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: "Gilroy Light";
+	src: url(../fonts/Gilroy-Light.ttf);
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: "Gilroy ExtraBold";
+	src: url(../fonts/Gilroy-Extrabold.ttf);
+	font-weight: bolder;
+}
+
 /* ----- Basic styles ----- */
 
 body {
