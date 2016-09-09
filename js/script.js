@@ -13,14 +13,17 @@ var searchButton = document.querySelector( ".search__button" );
 /* ---------------------------------------------------------------------------------------------------- */
 
 function ToggleSearchButton()
-{	
-	if ( search.value )
+{
+	if ( searchButton.classList.contains("hidden") && search.value )
 	{
-		searchButton.style.display = "inline-block";
+		searchButton.classList.remove("hidden");
 	}
 	else
 	{
-		searchButton.style.display = "none";
+		if ( !search.value )
+		{
+			searchButton.classList.add("hidden");
+		}
 	}
 }
 

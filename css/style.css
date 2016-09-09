@@ -292,7 +292,7 @@ h2 {
 }
 
 .search__button {
-	display: none;
+	display: inline-block;
 	vertical-align: top;
 	padding: 4px 19px 5px;
 	font-size: 15px;
@@ -1759,4 +1759,13 @@ h2 {
 .modal-close::after {
 	-webkit-transform: rotate(-45deg);
 			transform: rotate(-45deg);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----- STATES ----- */
+/* ---------------------------------------------------------------------------------------------------- */
+
+.hidden {
+	display: none;
 }
