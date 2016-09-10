@@ -138,6 +138,7 @@ h2 {
 
 .main-header__user::after,
 .main-nav::after,
+.catalog-menu::after,
 .slide::after,
 .slide-stats::after,
 .categories::after,
@@ -380,6 +381,14 @@ h2 {
 	line-height: 22px;
 }
 
+.catalog-contaner {
+	height: 22px;
+	overflow: hidden;
+}
+.catalog-contaner:hover {
+	overflow: visible;
+}
+
 .main-nav__item {
 	position: relative;
 	margin-right: 30px;
@@ -411,17 +420,12 @@ h2 {
 /* ----- Catalog menu ----- */
 
 .catalog-menu {
-	position: absolute;
-	top: 100%;
-	left: -60px;
-	display: none;
-	width: 100%;
-	margin: 0 60px;
-	padding: 20px 0 36px;
-	background-color: #f7e296;
-}
-.main-nav__item_dropdown:hover ~ .catalog-menu {
+	position: relative;
 	display: block;
+    left: -60px;
+    width: 1160px;
+    padding: 20px 60px 36px;
+	background-color: #f7e296;
 }
 
 .catalog-menu__col {
@@ -1671,6 +1675,7 @@ h2 {
 	position: fixed;
 	left: 50%;
 	top: 50%;
+	z-index: 1000;
 	display: none;
 	width: 960px;
 	padding: 97px 100px 78px 100px;
@@ -1796,6 +1801,7 @@ h2 {
 	position: fixed;
 	left: 50%;
 	top: 50%;
+	z-index: 1000;
 	display: none;
 	width: 960px;
 	height: 560px;
@@ -1842,14 +1848,9 @@ h2 {
 			transform: rotate(-45deg);
 }
 
-
 /* ---------------------------------------------------------------------------------------------------- */
 /* ----- STATES ----- */
 /* ---------------------------------------------------------------------------------------------------- */
-
-.hidden {
-	display: none;
-}
 
 .visible {
 	display: block;
